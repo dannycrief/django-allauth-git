@@ -8,9 +8,10 @@
 <li>Create virtual environment and activate it;</li>
 <li>Go to my_site directory using <b>cd django_auth</b>;</li>
 <li>Install requirements from <b>requirements.txt</b></li>
-<li>Make migration: <b>python manage.py makemigrations</b></li>
-<li>Migrate it: <b>python manage.py migrate</b></li>
-<li>If everything is okay, run it by using <b>python manage.py runserver</b></li>
+<li>Do not use migrate/makemigrations commands, because database is already done.</li>
+<li>If everything is okay, run it by using <b>python3 manage.py runserver</b></li>
 </ol>
+
+<p>You can also create superuser by typing: <b>python3 manage.py createsuperuser</b></p>
 
 <h4>My Slack: <u>@Stepan Kozurak</u></h4>
