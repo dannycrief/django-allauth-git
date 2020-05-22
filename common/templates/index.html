@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+{% if username %}
+    <h1>
+        Hello, {{ username }}!
+    </h1>
+    {% if github_url %}
+        <p>I know your: <a href="{{ github_url }}">GitHub</a> profile!</p>
+    {% endif %}
+    <p>Here you can <a href="{% url 'common:logout' %}">logout</a> or <a
+            href="{% url 'common:profile-create' %}">modify</a> your account</p>
+{% else %}
+    <p>You need to <a href="{% url 'common:register' %}">register</a> or <a href="{% url 'common:login' %}">login</a> on
+        site!</p>
+{% endif %}
+</body>
+</html>
