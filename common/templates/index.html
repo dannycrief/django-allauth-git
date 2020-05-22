@@ -11,6 +11,9 @@
     </h1>
     {% if github_url %}
         <p>I know your: <a href="{{ github_url }}">GitHub</a> profile!</p>
+        <p>You are {{ age }} years old</p>
+    {% else %}
+        <p>You are {{ age }} years old</p>
     {% endif %}
     <p>Here you can <a href="{% url 'common:logout' %}">logout</a> or <a
             href="{% url 'common:profile-create' %}">modify</a> your account</p>
